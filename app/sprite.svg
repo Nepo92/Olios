@@ -1,0 +1,38 @@
+ <svg display="none" xmlns="http://www.w3.org/2000/svg">
+
+<symbol id="logo" viewBox="0 0 42 42">
+<g>
+  <circle id="Ellipse_6" data-name="Ellipse 6" cx="21" cy="21" r="21" fill="#0023FF"/>
+  <circle id="Ellipse_7" data-name="Ellipse 7" cx="10.5" cy="10.5" r="10.5" transform="translate(11 11)" fill="#fff"/>
+  <g id="CIRCLE" transform="translate(9.409 12.545)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="2.5" cy="2.5" r="2.5" transform="translate(27.591 24.455)" fill="#0023FF"/>
+  </g>
+</g>
+</symbol>
+
+<symbol id="home" viewBox="0 0 26 31.982">
+<g>
+  <path id="Home" d="M72,228.743l10,10V254H77v-7a2,2,0,0,0-2-2H69a2,2,0,0,0-2,2v7H62V238.743l10-10m.884-3.359a1.25,1.25,0,0,0-1.768,0l-11.53,11.53A2,2,0,0,0,59,238.329V255a2,2,0,0,0,2,2h7a2,2,0,0,0,2-2v-7h4v7a2,2,0,0,0,2,2h7a2,2,0,0,0,2-2V238.329a2,2,0,0,0-.586-1.415Z" transform="translate(-59 -225.017)" fill=""/>
+</g>
+</symbol>
+
+<symbol id="basket" viewBox="0 0 36 32">
+<g>
+  <path id="Basket" d="M87,350H81.9a1.507,1.507,0,0,0-.132-.294l-5-8a1.5,1.5,0,0,0-2.547,1.588L78.418,350H65.582l4.191-6.706a1.5,1.5,0,0,0-2.547-1.588l-5,8A1.506,1.506,0,0,0,62.1,350H57a3,3,0,0,0-3,3v2a3,3,0,0,0,2.317,2.915l3.8,12.934A3,3,0,0,0,63,373H81a3,3,0,0,0,2.879-2.151l3.8-12.934A3,3,0,0,0,90,355v-2A3,3,0,0,0,87,350Zm-30,3H87v2H57Zm24,17-18,0L59.47,358H84.53Z" transform="translate(-54 -341)" fill=""/>
+</g>
+</symbol>
+
+<symbol id="search" viewBox="0 0 32 32">
+<g>
+  <path id="Search" d="M76,457a11.985,11.985,0,0,0-9.471,19.349l-10.09,10.09a1.5,1.5,0,1,0,2.121,2.121l10.09-10.09A12,12,0,1,0,76,457Zm0,21a9,9,0,1,1,9-9A9.01,9.01,0,0,1,76,478Z" transform="translate(-56 -457)" fill=""/>
+</g>
+</symbol>
+
+<symbol id="download" viewBox="0 0 27 32">
+<g>
+  <path id="In" d="M84,1338H61a2,2,0,0,1-2-2v-21a2,2,0,0,1,2-2h5.5a1.5,1.5,0,0,1,0,3H62v19H83v-19H78.5a1.5,1.5,0,1,1,0-3H84a2,2,0,0,1,2,2v21A2,2,0,0,1,84,1338Zm-5-15.5a1.5,1.5,0,0,1-.44,1.06l-5,5a1.5,1.5,0,0,1-2.121,0l-5-5a1.5,1.5,0,1,1,2.121-2.121L71,1323.879V1307.5a1.5,1.5,0,0,1,3,0v16.379l2.439-2.439A1.5,1.5,0,0,1,79,1322.5Z" transform="translate(-59 -1306)" fill=""/>
+</g>
+</symbol>
+
+</svg>
+
