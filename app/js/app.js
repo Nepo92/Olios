@@ -175,12 +175,12 @@ function NumberDown() {
   const input = document.querySelector('input');
   input.value--;
 
-  if (input.value === '1') {
+  if (input.value === '0') {
+    input.value = '1';
+  }
+
+  if (input.value <= '1') {
     down.removeEventListener('click', NumberDown);
-  } else if (input.value === '') {
-    down.addEventListener('click', NumberDown);
-  } else {
-    down.addEventListener('click', NumberDown);
   }
 }
 
@@ -192,14 +192,13 @@ function NumberUp() {
 }
 
 function UpDown() {
+  const input = document.querySelector('input');
   const up = document.querySelector('.product__right--up');
   const down = document.querySelector('.product__right--down');
-  const input = document.querySelector('input');
 
   if (!up || !down || !input) {
     return;
   }
-
   up.addEventListener('click', NumberUp);
 }
 /* Responsive text in button 'add to card' */
@@ -213,6 +212,7 @@ function buttonMedia() {
     buttonText.style.left = '30px';
   }
 }
+
 /* Constructor */
 
 function Olios() {
