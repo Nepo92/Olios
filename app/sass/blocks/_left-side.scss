@@ -1,0 +1,149 @@
+.left-side {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  width: 44px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2);
+
+  &__logo {
+    width: 20px;
+    height: 20px;
+    margin: 15px auto 0;
+    cursor: pointer;
+    fill: rgba(128, 128, 128, 0.4);
+  }
+
+  &__home {
+    width: 15px;
+    height: 15px;
+    margin: 20vh auto 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    fill: rgba(128, 128, 128, 0.4);
+
+    &:hover {
+      fill: blue;
+    }
+  }
+
+  &__basket {
+    width: 15px;
+    height: 15px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    fill: rgba(128, 128, 128, 0.4);
+
+    &:hover {
+      fill: blue;
+    }
+  }
+
+  &__search {
+    width: 15px;
+    height: 15px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    fill: rgba(128, 128, 128, 0.4);
+
+    &:hover {
+      fill: blue;
+    }
+  }
+
+  &__download {
+    width: 15px;
+    height: 15px;
+    margin: auto auto 50px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    fill: rgba(128, 128, 128, 0.4);
+
+    &:hover {
+      fill: blue;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .left-side {
+    width: 144px;
+
+    &__logo {
+      width: 60px;
+      height: 60px;
+      margin-top: 30px;
+    }
+
+    &__home {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__basket {
+      width: 40px;
+      height: 40px;
+      margin-top: 50px;
+    }
+
+    &__search {
+      width: 40px;
+      height: 40px;
+      margin-top: 50px;
+    }
+
+    &__download {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+/* Landscape */
+
+@media (min-width: 320px) and (orientation: landscape) {
+  .left-side {
+    &__download {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 731px) and (orientation: landscape) {
+  .left-side {
+    width: 144px;
+
+    &__logo {
+      width: 40px;
+      height: 40px;
+      margin-top: 30px;
+    }
+
+    &__home {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__basket {
+      width: 30px;
+      height: 30px;
+      margin-top: 40px;
+    }
+
+    &__search {
+      width: 30px;
+      height: 30px;
+      margin-top: 40px;
+    }
+
+    &__download {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 100px;
+    }
+  }
+}

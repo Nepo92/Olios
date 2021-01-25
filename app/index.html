@@ -1,156 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Olios</title>
+  <!-- Fonts -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Olios</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Style -->
 
-    <!-- Fonts -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <!-- Slider -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- svg4everybody -->
 
-    <!-- Style -->
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-
-    <!-- Slider -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.js"></script>
+  <script>svg4everybody()</script>
 </head>
-
 <body>
+  <div class="container">
+    <!-- Left side -->
 
-    <div class="container">
+    <aside class="left-side">
+      <svg class="left-side__logo navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#logo"></use>
+      </svg>
 
-        <!-- Left side -->
+      <svg class="left-side__home navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#home"></use>
+      </svg>
 
-        <div class="left-side">
-            <svg tabindex="0" onclick="window.location.href='index.html'" class="left-side__up-buttons--logo buttons">
-                <use xlink:href="sprite.svg#logo"></use>
-            </svg>
-            <div class="left-side__up-buttons">
-                <svg tabindex="0" class="left-side__up-buttons--home buttons" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#home"></use>
-                </svg>
+      <svg class="left-side__basket navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#basket"></use>
+      </svg>
 
-                <svg tabindex="0" class="left-side__up-buttons--basket buttons" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#basket"></use>
-                </svg>
+      <svg class="left-side__search navigation" tabindex="0">
+        <use xlink:href="sprite.svg#search"></use>
+      </svg>
 
-                <svg tabindex="0" class="left-side__up-buttons--search buttons">
-                    <use xlink:href="sprite.svg#search"></use>
-                </svg>
+      <svg class="left-side__download navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#download"></use>
+      </svg>
+    </aside>
+    <!-- Main -->
 
-            </div>
-            <div class="left-side__down-buttons">
+    <section class="slider">
+      <div class="slider__item">
+        <h2 class="slider__olios">olios</h2>
+        <p class="slider__newest">newest</p>
+        <p class="slider__furniture">Newest furniture shop template</p>
+        <a tabindex="0" href="" class="slider__btn navigation">view more</a>
+      </div>
 
-                <svg tabindex="0" class="left-side__down-buttons--downloads buttons" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#download"></use>
-                </svg>
+      <div class="slider__item">
+        <h2 class="slider__olios">olios</h2>
+        <p class="slider__newest">newest</p>
+        <p class="slider__furniture">Newest furniture shop template</p>
+        <a tabindex="0" href="" class="slider__btn navigation">view more</a>
+      </div>
 
-            </div>
+      <div class="slider__item">
+        <h2 class="slider__olios">olios</h2>
+        <p class="slider__newest">newest</p>
+        <p class="slider__furniture">Newest furniture shop template</p>
+        <a tabindex="0" href="" class="slider__btn navigation">view more</a>
+      </div>
 
-        </div>
+      <div class="slider__item">
+        <h2 class="slider__olios">olios</h2>
+        <p class="slider__newest">newest</p>
+        <p class="slider__furniture">Newest furniture shop template</p>
+        <a tabindex="0" href="" class="slider__btn navigation">view more</a>
+      </div>
+    </section>
+    <!-- Right menu -->
 
-        <!-- Main -->
+    <nav class="menu">
+      <input class="menu__checkbox" id="menu__checkbox" type="checkbox">
 
-        <div class="slider">
-            <div class="slider__item">
-                <p class="slider__item--olios">olios</p>
-                <p class="slider__item--newest">newest</p>
-                <p class="slider__item--furniture">Newest furniture shop template</p>
-                <a tabindex="0" href="" class="slider__item--btn buttons">view more</a>
-            </div>
-            <div class="slider__item">
-                <p class="slider__item--olios">olios</p>
-                <p class="slider__item--newest">newest</p>
-                <p class="slider__item--furniture">Newest furniture shop template</p>
-                <a tabindex="0" href="" class="slider__item--btn buttons">view more</a>
-            </div>
-            <div class="slider__item">
-                <p class="slider__item--olios">olios</p>
-                <p class="slider__item--newest">newest</p>
-                <p class="slider__item--furniture">Newest furniture shop template</p>
-                <a tabindex="0" href="" class="slider__item--btn buttons">view more</a>
-            </div>
-            <div class="slider__item">
-                <p class="slider__item--olios">olios</p>
-                <p class="slider__item--newest">newest</p>
-                <p class="slider__item--furniture">Newest furniture shop template</p>
-                <a tabindex="0" href="" class="slider__item--btn buttons">view more</a>
-            </div>
-        </div>
+      <label tabindex="0" class="menu__circle navigation" for="menu__checkbox">
+        <span class="menu__row"></span>
+      </label>
 
-        <!-- Right menu -->
+      <ul class="menu__list right-menu">
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=livingroom">
+            living room
 
-        <input class="right-menu__checkbox" id="right-menu__checkbox" type="checkbox">
-            <label tabindex="0" class="right-menu__circle buttons" for="right-menu__checkbox">
-                <span class="right-menu__circle--row"></span>
-            </label>
-            <ul class="right-menu">
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=livingroom">
-                        living room <img class="right-menu__item--icon" src="./img/livingroom.png" alt="living room">
-                    </a>
-                </li>
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=office">
-                        office <img class="right-menu__item--icon" src="./img/office.png" alt="office">
-                    </a>
-                </li>
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=forkids">
-                        for kids <img class="right-menu__item--icon" src="./img/for-kids.png" alt="for kids">
-                    </a>
-                </li>
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=kitchen">
-                        kitchen <img class="right-menu__item--icon" src="./img/kitchen.png" alt="kitchen">
-                    </a>
-                </li>
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=accesories">
-                        accesories <img class="right-menu__item--icon" src="./img/accesories.png" alt="accesories">
-                    </a>
-                </li>
-                <li class="right-menu__item">
-                    <a tabindex="0" class="right-menu__item--link buttons" href="categories.html?filter=all">
-                        show all categories
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <img class="right-menu__icon" src="./img/livingroom.png" alt="living room">
+          </a>
+        </li>
 
-    <!--Scripts-->
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=office">
+            office
 
-    <script src="./js/app.min.js"></script>
+            <img class="right-menu__icon" src="./img/office.png" alt="office">
+          </a>
+        </li>
 
-    <!--Slider-->
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=forkids">
+            for kids
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').bxSlider({
-                controls: false,
-                touchEnabled: true,
-                auto: true,
-                pause: 4000,
-            });
-        });
-    </script>
+            <img class="right-menu__icon" src="./img/for-kids.png" alt="for kids">
+          </a>
+        </li>
 
-    <!-- svg4everybody -->
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=kitchen">
+            kitchen
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.js"></script>
-    <script>svg4everybody()</script>
+            <img class="right-menu__icon" src="./img/kitchen.png" alt="kitchen">
+          </a>
+        </li>
 
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=accesories">
+            accesories
+
+            <img class="right-menu__icon" src="./img/accesories.png" alt="accesories">
+          </a>
+        </li>
+
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=all">
+            show all categories
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--Scripts-->
+
+  <script src="./js/app.min.js"></script>
+  <!--Slider-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        controls: false,
+        touchEnabled: true,
+        auto: true,
+        pause: 4000,
+      });
+    });
+  </script>
 </body>
-
 </html>

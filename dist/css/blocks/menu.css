@@ -1,0 +1,288 @@
+@-webkit-keyframes row__menu--open {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes row__menu--open {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes row__menu--open-pseudo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes row__menu--open-pseudo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked + .menu__circle > .menu__row {
+  -webkit-animation-name: row__menu--open;
+          animation-name: row__menu--open;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu__checkbox:checked + .menu__circle > .menu__row::before {
+  margin-top: 0;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
+  -webkit-animation-name: row__menu--open-pseudo;
+          animation-name: row__menu--open-pseudo;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu__checkbox:checked + .menu__circle > .menu__row::after {
+  margin-top: 0;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
+}
+
+.menu__checkbox:checked ~ .right-menu {
+  right: 0;
+}
+
+.menu__circle {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12px;
+  height: 2px;
+  background-color: blue;
+  border-radius: 2px;
+}
+
+.menu__row::before {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12px;
+  height: 2px;
+  margin-top: -4px;
+  background-color: blue;
+  border-radius: 2px;
+  content: "";
+}
+
+.menu__row::after {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: blue;
+  border-radius: 2px;
+  content: "";
+}
+
+.right-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  list-style: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 0.6s;
+       -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-property: right;
+  -o-transition-property: right;
+  transition-property: right;
+}
+
+.right-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.right-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0 15px 0 0;
+}
+
+.right-menu__item:first-child {
+  margin: 30vh 0 0 0;
+}
+
+.right-menu__item:last-child {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.right-menu__item:last-child .right-menu__link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: auto;
+  margin: 0 auto;
+}
+
+.right-menu__item:last-child .right-menu__link::after {
+  display: none;
+}
+
+.right-menu__item:last-child .right-menu__link::before {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+  border-radius: 2px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+}
+
+.right-menu__link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: auto;
+  color: rgba(128, 128, 128, 0.4);
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.right-menu__link::after {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  content: "";
+}
+
+.right-menu__link:hover::after {
+  width: 22px;
+}
+
+.right-menu__icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 10px;
+  pointer-events: none;
+}
+
+@supports (-webkit-appearance:none){
+
+}

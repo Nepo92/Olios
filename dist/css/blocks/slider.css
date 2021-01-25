@@ -1,0 +1,156 @@
+.bx-wrapper {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 0 0 44px !important;
+  border: 0 !important;
+}
+
+.bx-viewport {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bx-pager {
+  position: absolute;
+  right: 20px;
+  bottom: 20px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.bx-pager-link {
+  margin: 0 10px 0 0 !important;
+  background-color: transparent !important;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 100% !important;
+}
+
+.bx-pager-item:last-child .bx-pager-link {
+  margin: 0 !important;
+}
+
+/* Slider */
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+
+.slider__item:nth-child(2) {
+  background-image: url("../img/slide1-phones.png");
+  background-size: cover;
+}
+
+.slider__item:nth-child(3) {
+  background-image: url("../img/slide2-phones.png");
+  background-size: cover;
+}
+
+.slider__item:nth-child(4) {
+  background-image: url("../img/slide3-phones.png");
+  background-size: cover;
+}
+
+.slider__item:nth-child(5) {
+  background-image: url("../img/slide4-phones.png");
+  background-size: cover;
+}
+
+.slider__olios {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 4px 0 0 0;
+  font-weight: 100;
+  font-size: calc((100vw - 240px) / (1920 - 240) * (220 - 24) + 24px);
+  text-transform: uppercase;
+}
+
+.slider__newest {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 6px 0 0 0;
+  color: #bcbcc0;
+  font-weight: 800;
+  font-size: calc((100vw - 240px) / (1920 - 240) * (400 - 30) + 30px);
+  text-transform: uppercase;
+}
+
+.slider__furniture {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 14% 0 0 0;
+  font-size: calc((100vw - 240px) / (1920 - 240) * (34 - 8) + 8px);
+  text-transform: uppercase;
+}
+
+.slider__btn {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  margin: 19% auto 0;
+  padding: 3px 8px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+@supports (-webkit-appearance:none){
+.slider__item:nth-child(2){background-image:url("../img/slide1-phones.webp")}
+.slider__item:nth-child(3){background-image:url("../img/slide2-phones.webp")}
+.slider__item:nth-child(4){background-image:url("../img/slide3-phones.webp")}
+.slider__item:nth-child(5){background-image:url("../img/slide4-phones.webp")}
+}

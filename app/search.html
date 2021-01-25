@@ -2,146 +2,145 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Olios</title>
+  <!-- Fonts -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Olios</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Style -->
 
-    <!-- Fonts -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <!-- Slider -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- svg4everybody -->
 
-    <!-- Style -->
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-
-    <!-- Slider -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.js"></script>
+  <script>svg4everybody()</script>
 </head>
 
 <body>
+  <div class="container">
+    <!-- Left side -->
 
-    <div class="container">
+    <aside class="left-side">
+      <svg class="left-side__logo navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#logo"></use>
+      </svg>
 
-        <!-- Left side -->
+      <svg class="left-side__home navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#home"></use>
+      </svg>
 
-        <div class="left-side">
-            <div class="left-side__up-buttons">
+      <svg class="left-side__basket navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#basket"></use>
+      </svg>
 
-                <svg tabindex="0" onclick="window.location.href='index.html'" class="left-side__up-buttons--logo">
-                    <use xlink:href="sprite.svg#logo"></use>
-                </svg>
+      <svg class="left-side__search navigation" tabindex="0">
+        <use xlink:href="sprite.svg#search"></use>
+      </svg>
 
-                <svg class="left-side__up-buttons--home" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#home"></use>
-                </svg>
+      <svg class="left-side__download navigation" tabindex="0" onclick="window.location.href='index.html'">
+        <use xlink:href="sprite.svg#download"></use>
+      </svg>
+    </aside>
+    <!-- Main -->
 
-                <svg class="left-side__up-buttons--basket" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#basket"></use>
-                </svg>
+    <main class="search">
+      <div class="search__inner">
+        <form class="search__form">
 
-                <svg class="left-side__up-buttons--search" onclick="window.location.href='search.html'">
-                    <use xlink:href="sprite.svg#search"></use>
-                </svg>
+          <input type="search" class="search__input" required>
 
-            </div>
-            <div class="left-side__down-buttons">
+          <button type="reset" class="search__reset"></button>
 
-                <svg class="left-side__down-buttons--downloads" onclick="window.location.href='index.html'">
-                    <use xlink:href="sprite.svg#download"></use>
-                </svg>
+          <p class="search__type">
+            Type product that you are looking for
+          </p>
 
-            </div>
+          <ul class="search__results result-list">
+            <li class="result-list__item">
+              <img class="result-list__img" src="./img/products/product_1.png" alt="result">
 
-        </div>
-
-        <!-- Main -->
-
-        <div class="search">
-            <div class="search__inner">
-                <form class="search__form">
-
-                    <input type="search" class="search__form--input" required>
-                    <button type="reset" class="search__form--reset"></button>
-                
-                    <p class="search__form--type">Type product that you are looking for</p>
-                    <div class="search__form--results">
-                        <a href="" class="search__form--result">
-                            <div class="search__form--res-img">
-                                <img src="./img/products/product_1.png" alt="result">
-                            </div>
-                            <div class="search__form--res-name">red seat</div>
-                        </a>
-                        <a href="" class="search__form--result">
-                            <div class="search__form--res-img"><img src="./img/products/product_5.png" alt="result"></div>
-                            <div class="search__form--res-name">dark seat</div>
-                        </a>
-                    </div>
-                    <p class="search__form--value">1 Searched result</p>
-                </form>
-            </div>      
-        </div>
-
-        <!-- Right menu -->
-
-        <input class="right-menu__circle--checkbox" id="right-menu__circle--checkbox" type="checkbox">
-        <div class="right-menu__circle">
-            <label class="right-menu__circle--button" for="right-menu__circle--checkbox">
-                <span class="right-menu__circle--row"></span>
-            </label>
-        </div>
-
-        <ul class="right-menu">
-            <li class="right-menu__item">
-                <a href="categories.html?filter=livingroom">
-                    living room
-                        <img src="./img/livingroom.png" alt="living room">
-                </a>
+              <p class="result-list__name">red seat</p>
             </li>
-            <li class="right-menu__item">
-                <a href="categories.html?filter=office">
-                    office <img src="./img/office.png" alt="office">
-                </a>
+
+            <li class="result-list__result">
+              <img class="result-list__img" src="./img/products/product_5.png" alt="result">
+
+              <p class="result-list__name">dark seat</p>
             </li>
-            <li class="right-menu__item">
-                <a href="categories.html?filter=forkids">
-                    for kids <img src="./img/for-kids.png" alt="for kids">
-                </a>
-            </li>
-            <li class="right-menu__item">
-                <a href="categories.html?filter=kitchen">
-                    kitchen <img src="./img/kitchen.png" alt="kitchen">
-                </a>
-            </li>
-            <li class="right-menu__item">
-                <a href="categories.html?filter=accesories">
-                    accesories <img src="./img/accesories.png" alt="accesories">
-                </a>
-            </li>
-            <li class="right-menu__item">
-                <a href="categories.html?filter=all">
-                    show all categories
-                </a>
-            </li>
-        </ul>
+          </ul>
 
-    </div>
+          <p class="result-list__value">1 Searched result</p>
+        </form>
+      </div>
+    </main>
+    <!-- Right menu -->
 
-    <!--Scripts-->
+    <nav class="menu">
+      <input class="menu__checkbox" id="menu__checkbox" type="checkbox">
 
-    <script src="./js/app.min.js"></script>
+      <label tabindex="0" class="menu__circle navigation" for="menu__checkbox">
+        <span class="menu__row"></span>
+      </label>
 
-    <!-- svg4everybody -->
+      <ul class="menu__list right-menu">
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=livingroom">
+            living room
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.js"></script>
-    <script>svg4everybody()</script>
+            <img class="right-menu__icon" src="./img/livingroom.png" alt="living room">
+          </a>
+        </li>
 
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=office">
+            office
+
+            <img class="right-menu__icon" src="./img/office.png" alt="office">
+          </a>
+        </li>
+
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=forkids">
+            for kids
+
+            <img class="right-menu__icon" src="./img/for-kids.png" alt="for kids">
+          </a>
+        </li>
+
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=kitchen">
+            kitchen
+
+            <img class="right-menu__icon" src="./img/kitchen.png" alt="kitchen">
+          </a>
+        </li>
+
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=accesories">
+            accesories
+
+            <img class="right-menu__icon" src="./img/accesories.png" alt="accesories">
+          </a>
+        </li>
+
+        <li class="right-menu__item">
+          <a tabindex="0" class="right-menu__link navigation" href="categories.html?filter=all">
+            show all categories
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--Scripts-->
+
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>
